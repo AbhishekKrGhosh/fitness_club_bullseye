@@ -1,38 +1,72 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  
+}
+.HomePage{
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://api.time.com/wp-content/uploads/2021/10/GettyImages-577674005.jpg");
+
+}
+
 .App {
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.parent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .div1 { grid-area: 1 / 1 / 2 / 7; }
+  .div2 { grid-area: 2 / 1 / 7 / 4; }
+  .div3 { grid-area: 2 / 4 / 7 / 7; }
+  .div1 .h1{
+    color:white
   }
-  to {
-    transform: rotate(360deg);
+  .div1 .h3
+  {
+    color:#8BF5FA
   }
+  .div2
+  {
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+.right-side{
+  background: #F0EEED;
+  padding: 20px;
+  height: 50vh;
+  width: 30vw;
 }
+ form, .button{
+  background: #F0EEED;
+ }
+  .right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+    background: #F0EEED;
+  }
+  input{
+    background: white;
+  }
+  .btn{
+    background: green;
+  }
+  .button{
+    margin-top: 10px;
+  }
+  .div3{
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+  .table table td{
+    background: white;
+  }
